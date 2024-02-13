@@ -10,6 +10,11 @@
 
 }
 
+
+#page1 h1{
+    color: red;
+}
+
 .page2{
 
     min-height: 100vh;
@@ -19,9 +24,18 @@
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 2vw;
+    padding-top: 1vh;
+    padding-right: 2vw;
 
 }
+nav img{
+    height: 10vh;
+    padding-left: 2vw;
+ 
+}
+
+
+
 nav a{
     text-decoration: none;
     color: black;
@@ -35,4 +49,33 @@ nav a{
     display: flex;
     align-items: center;
     gap : 3vw;
+}
+
+
+.bob{
+    position: relative;
+    left: 50vw;
+    top: 30vh;
+    background-color:#BACBA9 ;
+    height: 10vh;
+    width: 50vw;
+
+    filter: blur(25px);
+    animation-name: animate1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes animate1 {
+    from{
+        transform: translate(20%,20%);
+
+    }
+    to{
+        transform: translate(-20%,-30%);
+    }
+    
 }
