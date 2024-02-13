@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#page1{
+
+    min-height: 100vh;
+    background-image: linear-gradient(#F1BF98, #E1F4CB);
+
+}
+
+.page2{
+
+    min-height: 100vh;
+    background-image: linear-gradient( #E1F4CB,#BACBA9);
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2vw;
+}
+.anc:hover{
+    color: beige;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    gap : 3vw;
+}
