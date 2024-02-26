@@ -3,10 +3,11 @@
     padding: 0;
 }
 
+
 #page1{
 
     min-height: 100vh;
-    background-image: linear-gradient(#F1BF98, #E1F4CB);
+    background-image: linear-gradient( #d0cbf4,#59c230);
     position: relative;
 
 }
@@ -19,7 +20,7 @@
 .page2{
 
     min-height: 100vh;
-    background-image: linear-gradient( #E1F4CB,#BACBA9);
+    background-image: linear-gradient( #59c230, #1e6b00);
     
 }
 nav{
@@ -110,7 +111,7 @@ nav a{
   animation: textclip 2s linear infinite;
   display: inline-block;
   font-size: 5vw;
-  position: relative; 
+  position: absolute; 
     top: 20vh;
 
   
@@ -128,17 +129,32 @@ nav a{
     justify-content: center;
 }
 
+.background img{
+     position: absolute;
+}
+
 #left{
     transform: rotateY(180deg);
-    position: absolute;
     top: 30vh;
     width: 60%;
 
 }
 #right{
-    position: absolute;
-    left : 40vw;
+   
+    right: 0;
     top: 30vh;
     width: 60%;
 
+}
+.tree{
+    top: 35vh;
+    height: 50%;
+   
+}
+
+#left-tree{
+   left: 30vw; 
+}
+#right-tree{
+   right: 30vw;
 }
