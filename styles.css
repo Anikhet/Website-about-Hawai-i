@@ -4,12 +4,22 @@
 }
 
 
+
 #page1{
 
-    min-height: 100vh;
-    background-image: linear-gradient( #d0cbf4,#59c230);
+   height: 100vh;
+
     position: relative;
 
+}
+#videobg{
+    position: fixed; /* or absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 
@@ -20,9 +30,30 @@
 .page2{
 
     min-height: 100vh;
-    background-image: linear-gradient( #59c230, #1e6b00);
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
+.containerpage2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.page2 h2{
+    font-size: 6vw;
+    color: beige;
+}
+
+.containerpage2 h3{
+    font: 5vw;
+    color: beige;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -48,11 +79,11 @@ nav img{
 
 nav a{
     text-decoration: none;
-    color: black;
+    color: beige;
     font-size: 1.2vw;
 }
 .anc:hover{
-    color: beige;
+    color: white;
 }
 
 .nav-container{
@@ -63,33 +94,6 @@ nav a{
 }
 
 
-.bob{
-    position: relative;
-    left: 50vw;
-    top: 30vh;
-    background-color:#BACBA9 ;
-    height: 10vh;
-    width: 50vw;
-
-    filter: blur(25px);
-    animation-name: animate1;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-
-}
-
-@keyframes animate1 {
-    from{
-        transform: translate(20%,20%);
-
-    }
-    to{
-        transform: translate(-20%,-30%);
-    }
-    
-}
 
 .animate-charcter
 {
@@ -129,32 +133,5 @@ nav a{
     justify-content: center;
 }
 
-.background img{
-     position: absolute;
-}
 
-#left{
-    transform: rotateY(180deg);
-    top: 30vh;
-    width: 60%;
 
-}
-#right{
-   
-    right: 0;
-    top: 30vh;
-    width: 60%;
-
-}
-.tree{
-    top: 35vh;
-    height: 50%;
-   
-}
-
-#left-tree{
-   left: 30vw; 
-}
-#right-tree{
-   right: 30vw;
-}
