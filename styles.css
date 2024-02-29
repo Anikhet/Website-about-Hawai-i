@@ -12,7 +12,7 @@
     position: relative;
 
 }
-#videobg{
+.videobg{
     position: fixed; /* or absolute */
     top: 0;
     left: 0;
@@ -131,10 +131,6 @@ nav a{
     background-position: 200% center;
   }
 }
-
-
-
-
 
 
 
