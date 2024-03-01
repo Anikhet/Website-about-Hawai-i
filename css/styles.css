@@ -5,7 +5,9 @@
 
 
 
-
+#active-a{
+  color:red
+}
 #page1{
 
    height: 100vh;
@@ -377,4 +379,71 @@ nav a{
 
   border: 2px solid white;
 
+}
+.maui{
+ height: 100vh;
+}
+
+
+.mauicontainer{
+  display: flex;
+  height: 100vh;
+  align-items: flex-end;
+  padding-left: 10vw;
+
+
+}
+
+.maui2{
+  display: flex;
+min-height: 100vh;
+background-image: linear-gradient(rgba(0, 128, 0, 0.391),rgb(6, 83, 0));
+justify-content: center;
+align-items: center;
+gap: 10vw;
+padding: 3vw;
+}
+
+.maui2 img{
+  height: 15vw;
+  width: 25vw;
+  border: 5px ridge ;
+}
+
+.maui h1{
+  font-size: 10vw;
+  color: beige;
+  font-weight: 800;
+  text-shadow: 2px 2px #a8a8a8;
+
+}
+
+.maui p{
+  font-size: 1.5vw;
+  color: beige;
+
+}
+
+.oahu{
+  min-height: 100vh;
+   min-width: 100vw;
+ 
+ }
+
+.oahu h1{
+  font-size: 10vw;
+  color: beige;
+  font-weight: 800;
+  text-shadow: 2px 2px #a8a8a8;
+}
+
+.oahucontainer{
+  display: flex;
+  min-height: 100vh;
+justify-content: center;
+flex-direction: column;
+padding-top: 20vh;
+width: 40%;
+  
+  padding-left: 10vw;
 }
