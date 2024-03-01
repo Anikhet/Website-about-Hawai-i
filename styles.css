@@ -312,3 +312,69 @@ nav a{
     color: rgb(196, 196, 177);
 
   }
+
+.outaccom{
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+}
+.outaccom h1{
+  color: #dddddf;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.hil1{
+  display: flex;
+
+
+}
+.hil1 img{
+  width: 20vw;
+  height: 20vh;
+}
+.hil2{
+  display: flex;
+
+
+}
+.hil2 img{
+  width: 20vw;
+  height: 20vh;
+}
+
+
+
+
+
+.hil{
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+}
+.hil h2{
+  font-size: 4vw;
+  color: rgb(196, 196, 177);
+
+}
+
+.accomex{
+  min-height: 100vh;
+
+  background-color: rgba(2, 94, 193, 0.876);
+ 
+}
+.beauthil{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.beauthil img{
+
+  border: 2px solid white;
+
+}
