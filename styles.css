@@ -206,6 +206,9 @@ nav a{
 .geog{
     min-height: 100vh;
     background-image: linear-gradient( rgb(196, 141, 3),rgba(255, 153, 0, 0.708));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
@@ -227,8 +230,85 @@ nav a{
     align-items: center;
     gap: 5vh;
     width: 60%;
-    border: 5px solid rgba(185, 123, 7, 0.7);
+    border: 5px ridge rgba(185, 123, 7, 0.764);
     border-radius: 20px;
     background-color: #a37217c0;
     padding: 2vw;
 }
+.geog p{
+    font-weight: 800;
+    font-size: 1.5vw;
+    color: beige;
+
+  }
+
+  .temphist:hover{
+    background-color:#ae6b00; ;
+  }
+
+  .culcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 60vh;
+
+    padding-left: 3vw;
+  }
+  .cul-h1{
+    font-size: 8vw;
+    color: rgb(196, 196, 177);
+  }
+  .outcul{
+    min-height: 100vh;
+  }
+
+  .tempcul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 60%;
+    border: 0px ridge rgb(7, 155, 185);
+    border-radius: 20px;
+    padding: 2vw;
+  }
+
+  .cul-h2{
+    font-size:1.5vw;
+    font-weight: 500;
+    color: rgb(60, 60, 29);
+
+  }
+
+  .culcon1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    padding-left: 3vw;
+  }
+
+
+  .cul-ex{
+    display: flex;
+    background-color: rgba(2, 94, 193, 0.876);
+    min-height: 100vh;
+  }
+  .cul-ex h2{
+    color: beige;
+  }
+  .beautcul{
+
+    min-height: 100vh;
+    gap: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cul-h1-music{
+    font-size: 6vw;
+    color: rgb(196, 196, 177);
+
+  }
