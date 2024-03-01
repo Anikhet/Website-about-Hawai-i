@@ -447,3 +447,354 @@ width: 40%;
   
   padding-left: 10vw;
 }
+
+
+.oahuextend{
+  min-height: 100vh;
+background-image: linear-gradient(rgb(0, 103, 172),rgba(0, 128, 0, 0.715));
+
+}
+
+
+/* Activities */
+
+.activity-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+
+}
+.act{
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
+  border: 2px solid #333; /* dark border */
+  padding: 20px;
+  margin: 20px;
+
+
+}
+h3 {
+  font-size: 4.5vw;
+  color: beige;
+  margin: 0; /* Removes default margin from the h3 tag */
+}
+
+.acti{
+  min-height: 100vh;
+  background-image: linear-gradient( rgb(175, 175, 128),rgba(0, 0, 0, 0.5));
+
+
+}
+
+/* New CSS for the Flip Cards Grid */
+.flip-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: auto;
+}
+
+.flip-card-front p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: -50px;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.flip-card-back h1 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.flip-card-back p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/* Food */
+.foo{
+  min-height: 100vh;
+  background-image: linear-gradient( rgb(195, 183, 101),rgba(50, 49, 48, 0.708));
+
+
+}
+.menu-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-container h1 {
+  text-align: center;
+  color: #2980b9;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.menu-item h2 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.menu-item p {
+  margin: 5px 0 0;
+  flex-grow: 1;
+}
+
+.rating {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #f39c12;
+}
+
+.restaurant-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.restaurant-container h1 {
+  text-align: center;
+  color: #2980b9;
+}
+
+.restaurant-item {
+  margin-bottom: 30px;
+}
+
+.restaurant-item h2 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.restaurant-item p {
+  margin: 5px 0;
+}
+.restaurant-item img {
+  width: 600px;
+  height: 400px;
+  
+  margin-right: 20px;
+}
+.map {
+  margin-top: 10px;
+}
+/* Travel */
+.tips1{
+  min-height: 100vh;
+  background-image: linear-gradient( rgb(48, 127, 184),rgba(50, 49, 48, 0.708));
+}
+
+.tips1{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 8vw;
+  
+}
+
+#tip{
+  width: 25%;
+  height: 60%;
+
+}
+
+.travcon h1{
+  font-size: 3.5vw;
+  color: beige;
+  font-weight: 800;
+}
+
+.travcon p{
+  font-size: 1.5vw;
+  color: beige;
+  font-weight: 500;
+}
+
+.tips{
+
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vh;
+}
+
+.tips h2{
+  font-size: 1.7vw;
+  color: beige;
+  font-weight: 500;
+}
+
+.tips p{
+  font-size: 1.2vw;
+  color: beige;
+  font-weight: 500;
+  padding: 0.5vh;
+}
+/*Adventure */
+.things-to-do-container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.things-to-do-container h1 {
+  text-align: center;
+  color: #2980b9;
+}
+
+.thing-to-do-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+
+.thing-to-do-item:last-child {
+  border-bottom: none;
+}
+
+.thing-to-do-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.thing-to-do-item p {
+  margin: 0;
+}
+
+/* Blogs */
+
+.blog-container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.blog-container h1 {
+  text-align: center;
+  color: #2980b9;
+}
+
+.blog-post {
+  margin-bottom: 30px;
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.blog-post h2 {
+  color: #2c3e50;
+}
+
+.blog-post p {
+  margin: 10px 0;
+}
+
+.blog-post a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
+}
+.oahucontainer h2{
+  color :beige
+}
