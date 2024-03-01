@@ -18,8 +18,10 @@
  
 
 }
+
+/* Video background */
 .videobg{
-    position: fixed; /* or absolute */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -168,7 +170,11 @@ nav a{
 
     gap: 3vh;
 
+  
   }
+
+
+  /* History */
   .histcon{
     min-height: 100vh;
     display: flex;
@@ -248,6 +254,8 @@ nav a{
     background-color:#ae6b00; ;
   }
 
+
+  /* Culture */
   .culcon{
     display: flex;
     justify-content: center;
@@ -314,7 +322,7 @@ nav a{
     color: rgb(196, 196, 177);
 
   }
-
+/* Accomodation */
 .outaccom{
   min-height: 100vh;
   display: flex;
@@ -380,6 +388,8 @@ nav a{
   border: 2px solid white;
 
 }
+
+/* Destinations */
 .maui{
  height: 100vh;
 }
@@ -467,8 +477,8 @@ background-image: linear-gradient(rgb(0, 103, 172),rgba(0, 128, 0, 0.715));
 
 }
 .act{
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency as needed */
-  border: 2px solid #333; /* dark border */
+  background-color: rgba(0, 0, 0, 0.5); 
+  border: 2px solid #333; 
   padding: 20px;
   margin: 20px;
 
@@ -477,7 +487,7 @@ background-image: linear-gradient(rgb(0, 103, 172),rgba(0, 128, 0, 0.715));
 h3 {
   font-size: 4.5vw;
   color: beige;
-  margin: 0; /* Removes default margin from the h3 tag */
+  margin: 0; 
 }
 
 .acti{
@@ -487,7 +497,7 @@ h3 {
 
 }
 
-/* New CSS for the Flip Cards Grid */
+/*CSS for the Flip Cards Grid */
 .flip-card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -797,4 +807,26 @@ h3 {
 }
 .oahucontainer h2{
   color :beige
+}
+
+.containergrading{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: beige;
+}
+
+.containergrading h1{
+  font-size: 3vw;
+
+}
+.containergrading h2{
+  font-size: 1.5vw;
+}
+
+.things-to-do-container p{
+  color: black;
+
 }
