@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
 }
-.main{
-    background-color: beige;
-}
+
 
 
 
@@ -13,6 +11,9 @@
    height: 100vh;
 
     position: relative;
+    
+   
+ 
 
 }
 .videobg{
@@ -22,7 +23,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -2;
 }
 
 
@@ -50,6 +51,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  
 
 }
 #main-text{
@@ -92,6 +94,7 @@ nav a{
     border:  #fff; /* Add a white border */
 
     border-radius: 20px;
+    z-index: 1000;
 }
 .anc:hover{
     color: white;
@@ -164,3 +167,68 @@ nav a{
     gap: 3vh;
 
   }
+  .histcon{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+   
+  }
+
+
+
+  .histcon p{
+    font-weight: 800;
+    font-size: 1.5vw;
+    color: beige;
+
+  }
+  .temphist h1{
+    font-size: 2.5vw;
+    color:beige;
+    
+  }
+
+  .histcon img{
+    width: 50%;
+    height: 50%;
+  }
+
+#page3{
+   
+    min-height: 100vh;
+    position: relative;
+  }
+
+.geog{
+    min-height: 100vh;
+    background-image: linear-gradient( rgb(196, 141, 3),rgba(255, 153, 0, 0.708));
+
+
+}
+#history-pic{
+ 
+        position: fixed; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2;
+
+
+}
+.temphist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    width: 60%;
+    border: 5px solid rgba(185, 123, 7, 0.7);
+    border-radius: 20px;
+    background-color: #a37217c0;
+    padding: 2vw;
+}
