@@ -3,8 +3,9 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Accomodation Hawaii</title>
+    
       <link rel="stylesheet" href="css/styles.css">
+      <title>Accomodation Hawaii</title>
    </head>
    <body>
       
@@ -62,9 +63,22 @@
                </div>
             </div>
          </div>
+
+
          <div class="accom-ex">
             <div class="beauthil">
-               <img id="hilton" src="media/images/hilton.jpeg" alt="history">
+               <!-- Image Gallery Container -->
+<div id="gallery-div">
+   <img id="galleryImage" src="media/images/initial-image.jpeg" alt="Gallery Image">
+<div id="buttons">
+   <button class="button-style" onclick="changeImage(-1)">&#10094;</button>
+   <button class="button-style" onclick="changeImage(1)">&#10095;</button>
+</div>
+</div>
+
+
+
+               <!-- <img id="hilton" src="media/images/hilton.jpeg" alt="history"> -->
                <div class="hil">
                   <div class="hil1">
                      <img src="media/images/hilton1.jpeg" alt="hotel">
@@ -80,6 +94,39 @@
                </div>
             </div>
          </div>
+     
+     
+         <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Phone: +1 800 555 1234</p>
+                    <p>Email: contact@hawaiitravel.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Hawaii Travel. All rights reserved.</p>
+            </div>
+        </footer>
+     
       </div>
+      <script src="js/script.js"></script>
    </body>
 </html>

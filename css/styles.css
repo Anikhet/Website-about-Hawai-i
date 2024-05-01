@@ -3,19 +3,130 @@
     padding: 0;
 }
 
+html, body{
+  height: 100%;
+ width: 100%;
+}
 
 
 #active-a{
   color:red
 }
+#crsr{
+  height: 2vw;
+  width: 2vw;
+  border-radius: 50%;
+  /* background-color: white; */
+  position: fixed;
+  border: 2px solid white;
+  z-index: 1;
+  transform: translate(-50%,-50%);
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+
+.loader{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index:999;
+  background-color:rgb(0, 0, 0);
+  padding: 25vh 10vw;
+  color: rgb(228, 228, 226)
+}
+.line h1{
+  font-size:7vw;
+  text-transform: uppercase;
+  font-weight:300 ;
+}
+.line h2{
+  font-size: 7vw;
+  text-transform: uppercase;
+  font-weight:300 ;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  position: relative;
+  left: 42vw;
+  bottom: 15.5vh;
+  opacity: 0;
+  
+  
+
+}
+
+@keyframes anime{
+  0%{
+      font-family: 'Plain Light';
+      -webkit-text-stroke: 1px #fff;
+      color: #fff;
+      opacity: 0;
+  }
+  0%{
+      font-family: 'Plain Light';
+      -webkit-text-stroke: 1px #fff;
+      color: #fff;
+      opacity: 1;
+  }
+  
+  47%{
+      font-family: 'Plain Light';
+      -webkit-text-stroke: 1px #fff;
+      color: #fff;
+      opacity: 0;
+  }
+  0%{
+      font-family: 'Plain Light';
+      -webkit-text-stroke: 1px #fff;
+      color: #fff;
+      opacity: 1;
+  }
+
+  100%{
+      font-family: 'Silk Serif Italic';
+      -webkit-text-stroke: 1px #fff;
+      color: transparent;
+  }
+}
+
+
+.line{
+  /* background-color: red; */
+  height: fit-content;
+  /* overflow: hidden; */
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3vw;
+  /* background-color: red; */
+}
+
+#timer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+
+}
+
+#timer h5, #timer h6{
+  font-size: 4vw;
+  font-family:'Silk Serif Light';
+
+  font-weight: 100;
+
+}
+#timer h5{
+  width: 6vw;
+  text-align: right;
+}
+
+
+
 #page1{
 
    height: 100vh;
-
     position: relative;
-    
-   
- 
 
 }
 
@@ -183,9 +294,16 @@ nav a{
     gap: 15vw;
     padding-left: 5vw;
     padding-right: 5vw;
+    transform: translateX(-100%);
+    transition: transform 1s ease-out; /* Smooth transition for sliding in */
+    opacity: 0; /* Start with the section being invisible */
    
   }
-
+/* Target state after sliding in */
+.histcon.active {
+  transform: translateX(0);
+  opacity: 1; /* Make the section fully visible after sliding in */
+}
 
 
   .histcon p{
@@ -362,16 +480,18 @@ nav a{
   gap: 2vh;
   align-items: center;
 }
+
 .hil h2{
   font-size: 4vw;
   color: rgb(196, 196, 177);
 
 }
 
-.accomex{
+.accom-ex{
   min-height: 100vh;
+  padding: 4vw;
 
-  background-color: rgba(2, 94, 193, 0.876);
+  /* background-color: rgba(255, 255, 255, 0.876); */
  
 }
 .beauthil{
@@ -380,6 +500,7 @@ nav a{
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  gap: 1vw;
 
 }
 
@@ -388,6 +509,8 @@ nav a{
   border: 2px solid white;
 
 }
+
+
 
 /* Destinations */
 .maui{
@@ -403,6 +526,8 @@ nav a{
 
 
 }
+
+
 
 .maui2{
   display: flex;
@@ -829,4 +954,76 @@ h3 {
 .things-to-do-container p{
   color: black;
 
+}
+
+
+
+#gallery-div {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  
+}
+#buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+
+}
+
+#galleryImage {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+.button-style{
+  height: 2vw;
+  width: 2vw;
+}
+
+
+footer {
+  background-color: #0000006b;
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 20px 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: #f7c08a; /* soft orange for headings */
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
 }

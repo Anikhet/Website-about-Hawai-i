@@ -3,12 +3,36 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Hawaii</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
       <link rel="stylesheet" href="css/styles.css">
+      <title>Hawaii</title>
    </head>
    <body>
+         <div id="crsr"></div>
+      <div class="loader">
+         <div class="line">
+           <div id="timer">
+             <h5>00</h5>
+             <h6>- 100</h6>
+           </div>
+           <h1>Your</h1>
+         </div>
+   
+         <div class="line">
+           <h1>Experience</h1>
+         </div>
+   
+         <div class="line">
+           <h1>is loading</h1>
+         </div>
+         <div class="line">
+           <h2>Now</h2>
+         </div>
+       </div>
+
+
+
       <div id="main">
+        
          <div id="page1">
             <video class="videobg" autoplay loop muted>
                <source src="media/video/trimmed.mp4" type="video/mp4">
@@ -63,12 +87,40 @@
                   </h3>
                </div>
             </div>
-            <div class="page2">
-            </div>
          </div>
+         <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Phone: +1 800 555 1234</p>
+                    <p>Email: contact@hawaiitravel.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Hawaii Travel. All rights reserved.</p>
+            </div>
+        </footer>
+        
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12/dist/gsap.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-      <script src="script.js"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="js/animation.js"></script>
    </body>
 </html>
